@@ -298,3 +298,31 @@ nav ul a:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 }
+
+/* ------- FOOTER --------*/
+
+footer {
+    background-color: #000000;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-content p {
+    font-size: 15px;
+    color: #aaaaaa;
+}
+
+.footer-content p:first-child {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
