@@ -55,25 +55,48 @@ nav ul a:hover {
 /* ------- SOBRE --------*/
 
 #sobre {
-    padding: 50px;
+    margin-top: 120px;
+    padding: 80px 20px;
+}
+
+.sobre-copa {
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 
 .titulo-sobre {
-    font-size: 20px;
-    color: #ffffff;
     text-align: center;
-    margin-top: 100px;
-    margin-right: 100px;
+}
+
+.titulo-sobre h2 {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.titulo-sobre h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #3498db;
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 
 .descricao-sobre {
-    font-size: 20px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.descricao-sobre p {
+    font-size: 17px;
+    line-height: 1.8;
     color: #ffffff;
-    text-align: left;
-    margin-top: 20px;
 }
 
 
@@ -159,7 +182,7 @@ nav ul a:hover {
 
 .titulo-linha-do-tempo h2 {
     font-size: 36px;
-    color: #000;
+    color: #ffffff;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -179,7 +202,7 @@ nav ul a:hover {
     width: 260px;
     font-size: 15px;
     line-height: 1.6;
-    color: #000; /* TEXTO PRETO */
+    color: #000; 
     box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
     position: relative;
@@ -203,19 +226,70 @@ nav ul a:hover {
     box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
-
-.copa-1930::before { background: #f39c12; }
-.copa-1950::before { background: #e74c3c; }
-.copa-1954::before { background: #9b59b6; }
-.copa-1958::before { background: #2ecc71; }
-.copa-1962::before { background: #16a085; }
-.copa-1970::before { background: #f1c40f; }
-.copa-1998::before { background: #2980b9; }
-.copa-2002::before { background: #27ae60; }
-.copa-2006::before { background: #d35400; }
-.copa-2010::before { background: #1abc9c; }
-.copa-2014::before { background: #c0392b; }
-.copa-2018::before { background: #34495e; }
-.copa-2022::before { background: #7f8c8d; }
-
 /* ------- RECORDES --------*/
+
+#recordes {
+    padding: 80px 20px;
+}
+
+.recordes-copa {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.titulo-recordes {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-recordes h2 {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.titulo-recordes h2::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: #3498db;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.descricao-recordes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.descricao-recordes p {
+    background: #ffffff;
+    padding: 18px;
+    width: 260px;
+    border-radius: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    position: relative;
+    transition: all 0.3s ease;
+    border-top: 5px solid #3498db;
+}
+
+.descricao-recordes p::before {
+    content: "🏆";
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    background: #fff;
+    padding: 2px 6px;
+    font-size: 16px;
+}
+
+.descricao-recordes p:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
