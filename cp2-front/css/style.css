@@ -5,9 +5,14 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), blue);
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to bottom, rgb(10, 4, 39), rgb(81, 128, 255));
     color: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
 }
 
 header {
@@ -37,18 +42,52 @@ nav ul a:hover {
 }
 
 /* ------- TÍTULO --------*/
+
+#titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 60px;
+    gap: 60px;
+    min-height: 90vh;
+}
+
 .titulo-copa {
-    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.titulo-copa h1 {
+    font-size: 90px;
     color: #ffffff;
-    text-align: center;
-    margin: 60px;
+    line-height: 1;
+}
+
+.titulo-copa h1 span {
+    color: #3498db;
+}
+
+.img-troféu {
+    flex-shrink: 0;
+}
+
+.img-troféu img {
+    width: 380px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .descricao-copa {
-    font-size: 30px;
-    color: #ffffff;
-    text-align: center;
-    margin: 20px;
+    font-size: 18px;
+    color: #cccccc;
+    line-height: 1.7;
+    max-width: 420px;
 }
 
 
@@ -59,38 +98,46 @@ nav ul a:hover {
     padding: 80px 20px;
 }
 
+#sobre::before {
+    content: "Sobre a Copa do Mundo";
+    display: block;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
 .sobre-copa {
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
 }
 
 .titulo-sobre {
-    text-align: center;
+    display: none;
 }
 
-.titulo-sobre h2 {
-    font-size: 36px;
-    color: #ffffff;
-    font-weight: 700;
+.img-sobre {
+    flex-shrink: 0;
 }
 
-.titulo-sobre h2::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: #3498db;
-    margin: 10px auto 0;
-    border-radius: 2px;
+.img-sobre img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    box-shadow: 0 0 30px rgba(52, 152, 219, 0.4);
 }
 
 .descricao-sobre {
     max-width: 800px;
-    text-align: center;
+    text-align: left;
 }
 
 .descricao-sobre p {
@@ -292,4 +339,32 @@ nav ul a:hover {
 .descricao-recordes p:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+/* ------- FOOTER --------*/
+
+footer {
+    background-color: #000000;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-content p {
+    font-size: 15px;
+    color: #aaaaaa;
+}
+
+.footer-content p:first-child {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
 }

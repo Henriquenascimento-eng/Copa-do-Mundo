@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copa do Mundo FIFA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body> 
     <header>
         <nav>
             <ul>
-                <a href="#sobre">Sobre</a>
-                <a href="#historia">História</a>
-                <a href="#linhaDoTempo">Linha do Tempo</a>
-                <a href="#recordes">Recordes</a>  
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#linhaDoTempo">Linha do Tempo</a></li>
+                <li><a href="#recordes">Recordes</a></li>
             </ul>
         </nav>
     </header>
@@ -22,22 +26,20 @@
         <section id="titulo">
             <div class="titulo-copa">
                 <h1>COPA DO<br/><span>MUNDO</span><br/>FIFA</h1>
+                <p class="descricao-copa">O torneio mais assistido de todo o planeta, unindo nações, culturas e paixões a cada quatro anos.</p>
             </div>
             <div class="img-troféu">
-                <!--  IMAGEM DO TROFÉU -->  
-            </div>
-            <div class="descricao-copa">
-                <p>O torneio mais assistido de todo o planeta, unindo nações, culturas e paixões a cada quatro anos.</p>
+                <img src="./imagens/taca.webp" alt="Troféu da Copa do Mundo FIFA">
             </div>
         </section>
 
         <section id="sobre">
             <div class="sobre-copa">
                 <div class="titulo-sobre">
-                    <h2>Sobre a Copa do Mundo</h2>
+                    <h2><i class="fa-solid fa-futbol"></i> Sobre a Copa do Mundo</h2>
                 </div>
                 <div class="img-sobre">
-                    <!-- IMAGEM DE UMA BOLA DE FUTEBOL -->
+                    <img src="imagens/bola.jpg">
                 </div>
                 <div class="descricao-sobre">
                     <p>A Copa do Mundo FIFA é o campeonato mundial de futebol masculino <br>entre seleções nacionais filiadas à FIFA. Realizada a cada quatro anos desde 1930 — com interrupções <br> em 1942 e 1946 por conta da Segunda Guerra Mundial é o evento esportivo mais assistido do planeta. <br>O torneio mobiliza bilhões de pessoas em todos os continentes, paralelamente às <br>fases de classificação que envolvem mais de 200 seleções ao longo de três anos de disputa.</p>
@@ -48,7 +50,7 @@
        <section id="historia">
             <div class="historia-copa">
                 <div class="titulo-historia">
-                    <h2>História da Copa do Mundo</h2>
+                    <h2><i class="fa-solid fa-book-open"></i> História da Copa do Mundo</h2>
                 </div>
                 <div class="descricao-historia">
                     <p>
@@ -82,7 +84,7 @@
         <section id="linhaDoTempo">
             <div class="linha-do-tempo">
                 <div class="titulo-linha-do-tempo">
-                    <h2>Linha do Tempo</h2>
+                    <h2><i class="fa-solid fa-timeline"></i> Linha do Tempo</h2>
                 </div>
                 <div class="descricao-linha-do-tempo">
                     <p class="copa-1930">1930: Primeira edição da Copa do Mundo, realizada no Uruguai. O país anfitrião venceu a final contra a Argentina por 4 a 2, conquistando o título inaugural.</p>
@@ -105,7 +107,7 @@
         <section id="recordes">
             <div class="recordes-copa">
                 <div class="titulo-recordes">
-                    <h2>Recordes da Copa do Mundo</h2>
+                    <h2><i class="fa-solid fa-trophy"></i> Recordes da Copa do Mundo</h2>
                 </div>
                 <div class="descricao-recordes">
                     <p>Pelé é o maior artilheiro da história da Copa do Mundo, com um total de 12 gols marcados em 14 jogos disputados entre 1958 e 1970.</p>
@@ -116,5 +118,13 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><i class="fa-solid fa-futbol"></i> Copa do Mundo FIFA</p>
+            <p>Projeto desenvolvido para o Checkpoint 2 &mdash; Front-End</p>
+        </div>
+    </footer>
+
 </body>
 </html>
