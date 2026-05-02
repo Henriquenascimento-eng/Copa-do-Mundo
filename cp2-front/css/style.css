@@ -368,3 +368,80 @@ footer {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+::selection {
+    background: #3498db;
+    color: #ffffff;
+}
+
+.titulo-copa h1::first-letter {
+    color: #3498db;
+    font-size: 110px;
+}
+
+.img-troféu img:hover {
+    transform: scale(1.03);
+    transition: 0.4s ease;
+}
+
+.img-sobre img:hover {
+    transform: rotate(4deg) scale(1.05);
+    transition: 0.4s ease;
+}
+
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        font-size: 20px;
+    }
+
+    #titulo {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .titulo-copa h1 {
+        font-size: 60px;
+    }
+
+    .descricao-copa {
+        max-width: 100%;
+    }
+
+    .img-troféu img {
+        width: 260px;
+        height: 340px;
+    }
+
+    .sobre-copa {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .descricao-sobre {
+        text-align: center;
+    }
+
+    .descricao-linha-do-tempo p,
+    .descricao-recordes p {
+        width: 100%;
+    }
+
+    .historia-copa {
+        padding: 30px;
+    }
+}
